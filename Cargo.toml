@@ -1,0 +1,24 @@
+[package]
+name = "rsmount-sys"
+description = "Raw FFI bindings to the `util-linux/libmount` C library"
+version = "0.1.0"
+authors = ["Nick Piaddo <nick.piaddo@protonmail.com>"]
+license = "Apache-2.0 OR MIT"
+rust-version = "1.72"
+edition = "2021"
+repository = "https://github.com/nickpiaddo/rsmount-sys"
+homepage = "https://github.com/nickpiaddo/rsmount-sys"
+documentation = "https://docs.rs/rsmount-sys"
+readme = "README.md"
+keywords = ["ffi", "bindings"]
+categories = ["external-ffi-bindings", "os"]
+links = "mount"
+exclude = ["web-snapshots/*"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.66.1"
+pkg-config = "0.3.30"
