@@ -12,8 +12,9 @@ documentation = "https://docs.rs/rsmount-sys"
 readme = "README.md"
 keywords = ["ffi", "bindings"]
 categories = ["external-ffi-bindings", "os"]
-links = "mount"
 exclude = ["web-snapshots/*"]
+build = "build/build.rs"
+links = "mount"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -21,4 +22,5 @@ exclude = ["web-snapshots/*"]
 
 [build-dependencies]
 bindgen = "0.66.1"
+cc = "1.1.28"
 pkg-config = "0.3.30"
